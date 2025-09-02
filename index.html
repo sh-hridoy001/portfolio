@@ -6,8 +6,10 @@
       <!--  PWA   -->
       <link rel="manifest" href="/manifest.json">
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/SH.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/img/letter-s.png" type="image/x-icon">
       
+      <!--tailwind CDN-->
+      <script src="https://cdn.tailwindcss.com"></script>
 
       <!--=============== REMIXICONS ===============-->
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"> -->
@@ -140,109 +142,77 @@
 
          <!--==================== INFO ====================-->
          <section class="info section" id="info">
-            <h2 class="section_title">MY INFO</h2>
+         <h2 class="section_title">MY INFO</h2>
 
-            <div class="info_container container grid">
-               <!-- ABOUT -->
-               <div class="about grid">
-                  <div class="about_content">
-                     <h3 class="info_title">About me</h3>
-                     <p class="about_description">
-                        Passionate about crafting beautiful and user-friendly <b>website interfaces</b>. I have experience working on large-scale <b>web development projects</b>, delivering <b>high-quality</b> results.
-                     </p>
-                     <a href="" download="" target="_blank" class="button about_button">Download CV</a>
-                  </div>
-                  <img src="assets/img/fast/aziz1.webp" alt="image" class="about_img">
+         <div class="info_container container grid">
+            <!-- ABOUT -->
+            <div class="about grid">
+               <div class="about_content">
+               <h3 class="info_title">About Me</h3>
+               <p class="about_description">
+                  Passionate about crafting beautiful and user-friendly <b>website interfaces</b>. I have experience working on large-scale <b>web development projects</b>, delivering <b>high-quality</b> results. 
+                  My main focus is to become a skilled <b>Software Engineer</b> by improving <b>problem-solving</b> and mastering <b>modern web technologies</b>.
+               </p>
+
+               <!-- CV Buttons -->
+               <div class="cv_buttons" style="display:flex; gap:10px; margin-top:10px;">
+                  <!-- View in browser -->
+                  <a href="/CV/Sazzad_Hossain_Hridoy_CV.pdf" target="_blank" class="button about_button">
+                     View CV
+                  </a>
+                  <!-- Direct download -->
+                  <a href="/CV/Sazzad_Hossain_Hridoy_CV.pdf" download="Sazzad_Hossain_Hridoy_CV.pdf" class="button about_button">
+                     Download CV
+                  </a>
+               </div>
+               </div>
+               <img src="assets/img/fast/aziz1.webp" alt="image" class="about_img">
+            </div>
+
+            <!-- SKILLS -->
+            <div class="skills">
+               <h3 class="skillsTitle">Skills</h3>
+
+               <div class="skills_content grid">
+               <div class="skills_box">
+                  <img src="assets/img/info-html.svg" alt="HTML" class="skills_img">
+                  <span class="skills_name">HTML</span>
                </div>
 
-               <!-- EXPERIENCE -->
-               <div class="experience">
-
-                  <h3 class="info_title">Experience</h3>
-
-
-                  <div class="experience_content grid">
-
-                     <div class="experience_data grid">
-                        <h2 class="experience_company">YouTube</h2>
-                        <div>
-                           <h3 class="experience_profession">Content Creator</h3>
-                           <span class="experience_date">03/25 - Present</span>
-                           <p class="experience_description">
-                              Producing high-quality programming and AI-related educational videos. Responsible for researching, scripting, editing, and publishing content focused on helping developers and tech enthusiasts learn efficiently.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div class="experience_data grid">
-                        <h2 class="experience_company">Google</h2>
-                        <div>
-                           <h3 class="experience_profession">Web Developer</h3>
-                           <span class="experience_date">05/21 - 02/22</span>
-                           <p class="experience_description">
-                              short description of the work you do or did in the company.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div class="experience_data grid">
-                        <h2 class="experience_company">Adobe</h2>
-                        <div>
-                           <h3 class="experience_profession">Web Designer</h3>
-                           <span class="experience_date">01/20 - 03/21</span>
-                           <p class="experience_description">
-                              short description of the work you do or did in the company.
-                           </p>
-                        </div>
-                     </div>
-
-                  </div>
-
+               <div class="skills_box">
+                  <img src="assets/img/info-css.svg" alt="CSS" class="skills_img">
+                  <span class="skills_name">CSS</span>
                </div>
 
-               <!-- SKILLS -->
-               <div class="skills">
-                  <h3 class="info_title">Skills</h3>
+               <div class="skills_box">
+                  <img src="assets/img/info-javascript.svg" alt="JavaScript" class="skills_img">
+                  <span class="skills_name">JavaScript</span>
+               </div>
 
-                  <div class="skills_content grid">
-                     <div class="skills_box">
-                        <img src="assets/img/info-html.svg" alt="image" class="skills_img">
-                        <span class="skills_name">HTML</span>
-                     </div>
+               <div class="skills_box">
+                  <img src="assets/img/info-tailwind-css.svg" alt="Tailwind CSS" class="skills_img">
+                  <span class="skills_name">Tailwind CSS</span>
+               </div>
 
-                     <div class="skills_box">
-                        <img src="assets/img/info-css.svg" alt="image" class="skills_img">
-                        <span class="skills_name">CSS</span>
-                     </div>
+               <div class="skills_box">
+                  <img src="assets/img/info-figma.svg" alt="Figma" class="skills_img">
+                  <span class="skills_name">Figma</span>
+               </div>
 
-                     <div class="skills_box">
-                        <img src="assets/img/info-javascript.svg" alt="image" class="skills_img">
-                        <span class="skills_name">JavaScript</span>
-                     </div>
+               <div class="skills_box">
+                  <img src="assets/img/info-git.svg" alt="Git" class="skills_img">
+                  <span class="skills_name">Git</span>
+               </div>
 
-                     <div class="skills_box">
-                        <img src="assets/img/info-tailwind-css.svg" alt="image" class="skills_img">
-                        <span class="skills_name">Taillwind CSS</span>
-                     </div>
+               <div class="skills_box">
+                  <img src="assets/img/info-github.svg" alt="GitHub" class="skills_img">
+                  <span class="skills_name">GitHub</span>
+               </div>
 
-                     <div class="skills_box">
-                        <img src="assets/img/info-figma.svg" alt="image" class="skills_img">
-                        <span class="skills_name">Figma</span>
-                     </div>
-
-                     <div class="skills_box">
-                        <img src="assets/img/info-git.svg" alt="image" class="skills_img">
-                        <span class="skills_name">Git</span>
-                     </div>
-
-                     <div class="skills_box">
-                        <img src="assets/img/info-github.svg" alt="image" class="skills_img">
-                        <span class="skills_name">GitHub</span>
-                     </div>
-
-                  </div>
                </div>
             </div>
+
+         </div>
          </section>
 
          <!--==================== SERVICES ====================-->
