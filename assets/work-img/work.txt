@@ -13,9 +13,38 @@ https://indoreplant-website.netlify.app/
 
 House design
 https://github.com/sh-hridoy001/house-designer-web
-https://indoreplant-website.netlify.app/
-
+https://house-designer-web-sh.netlify.app/
 
 portfolio
 https://sh-hridoy-portfolio.netlify.app/
 https://github.com/sh-hridoy001/Portfolio_1
+
+
+
+
+skillll-------------------------------------------
+                     <div class="skills_box">
+                        <img src="assets/img/info-react.svg" alt="image" class="skills_img">
+                        <span class="skills_name">React</span>
+                     </div>
+
+                     <div class="skills_box">
+                        <img src="assets/img/info-sass.svg" alt="image" class="skills_img">
+                        <span class="skills_name">Sass</span>
+                     </div>
+
+                     <div class="skills_box">
+                        <img src="assets/img/icons8-nodejs.svg" alt="image" class="skills_img">
+                        <span class="skills_name">NodeJS</span>
+                     </div>
+
+                     <div class="skills_box">
+                        <img src="assets/img/icons8-express-js.svg" alt="image" class="skills_img">
+                        <span class="skills_name">Express</span>
+                     </div>
+
+
+                     <div class="skills_box">
+                        <img src="assets/img/icons8-mongodb.svg" alt="image" class="skills_img">
+                        <span class="skills_name">MongoDB</span>
+                     </div>
