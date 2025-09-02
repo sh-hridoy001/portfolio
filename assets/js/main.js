@@ -115,3 +115,23 @@ sr.reveal(`.home_img`, { delay: 600 });
 sr.reveal(`.home_scroll`, { delay: 800 });
 sr.reveal(`.work_card, .services_card`, { interval: 100 });
 sr.reveal(`.about_content`, { origin: "left" });
+
+
+
+// Initialize EmailJS
+emailjs.init("f_gzGmR_yFow4dM3v"); 
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_j27anly', '', this) // Template ID optional, left blank
+    .then(() => {
+      document.getElementById('contact-message').innerText = "Message sent successfully!";
+      form.reset();
+    }, (error) => {
+      document.getElementById('contact-message').innerText = "Oops, something went wrong!";
+      console.log(error);
+    });
+});

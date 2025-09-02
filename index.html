@@ -260,40 +260,56 @@
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-           <h2 class="section_title">CONTACT ME</h2>
+         <h2 class="section_title text-white">CONTACT ME</h2>
 
-           <div class="contact_container container grid">
-              <form action="" class="contact_form gird" id="contact-form">
+         <div class="contact_container container grid md:grid-cols-2 gap-8">
 
-                 <div class="contact_group grid">
-                    <input type="text" name="user_name" placeholder="Names" required class="contact_input">
-                    <input type="email" name="user_email" placeholder="Email" required class="contact_input">
-                 </div>
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact_form grid gap-4
+               bg-white/10 border border-white/20 shadow-sm p-6 rounded-lg">
 
-                 <textarea name="user_message" placeholder="Message" class="contact_input contact_area" required></textarea>
+               <div class="contact_group grid gap-4 md:grid-cols-2">
+               <input type="text" name="user_name" placeholder="Name" required
+                        class="contact_input border p-3 rounded w-full h-12 bg-white/20 placeholder-white/70 text-white">
+               <input type="email" name="user_email" placeholder="Email" required
+                        class="contact_input border p-3 rounded w-full h-12 bg-white/20 placeholder-white/70 text-white">
+               </div>
 
-                 <button type="submit" class="button contact_button" id="sendBtn">Send Message</button>
+               <textarea name="user_message" placeholder="Message" required
+                        class="contact_input contact_area border p-3 rounded w-full h-28 bg-white/20 placeholder-white/70 text-white"></textarea>
 
-                 <p class="contact_message" id="contact-message"></p>
-              
-               </form>
+               <button type="submit"
+                     class="button contact_button bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+               Send Message
+               </button>
 
-              <div class="contact_social grid">
-                 <a href="https://www.facebook.com" target="_blank" class="contact_social-link">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                 </a>
-                 <a href="https://www.instagram.com" target="_blank" class="contact_social-link">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                 </a>
-                 <a href="https://www.linkedin.com" target="_blank" class="contact_social-link">
-                    <i class="fab fa-linkedin"></i>
-                    <span>Linkedin</span>
-                 </a>
-              </div>
-           </div>
+               <p class="contact_message text-green-400 mt-2" id="contact-message"></p>
+            </form>
+
+            <!-- Social Links -->
+            <div class="contact_social grid gap-4">
+               <a href="https://www.facebook.com" target="_blank"
+                  class="contact_social-link flex items-center gap-2 text-white">
+               <i class="fab fa-facebook text-blue-700"></i>
+               <span>Facebook</span>
+               </a>
+               <a href="https://www.instagram.com" target="_blank"
+                  class="contact_social-link flex items-center gap-2 text-white">
+               <i class="fab fa-instagram text-pink-600"></i>
+               <span>Instagram</span>
+               </a>
+               <a href="https://www.linkedin.com" target="_blank"
+                  class="contact_social-link flex items-center gap-2 text-white">
+               <i class="fab fa-linkedin text-blue-800"></i>
+               <span>LinkedIn</span>
+               </a>
+            </div>
+
+         </div>
          </section>
+
+
+
       </main>
       
       <!--==================== FOOTER ====================-->
